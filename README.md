@@ -124,11 +124,16 @@ SELECT * FROM students;
 
 | | |
 |---|---|
-| Registration form | `screenshots/registration-form.png` |
-| Successful submission | `screenshots/registration-success.png` |
-| Data verified via SSH (MySQL shell) | `screenshots/mysql-verify.png` |
-| EC2 instance running | `screenshots/ec2-instance.png` |
-| RDS database available | `screenshots/rds-database.png` |
+| Registration form | `screenshots/registration-<img width="1366" height="768" alt="form" src="https://github.com/user-attachments/assets/4662dade-3bc7-4ac4-9d71-38db7d6d4a66" />
+` |
+| Successful submission | `screenshots/registration-<img width="1366" height="768" alt="success" src="https://github.com/user-attachments/assets/cab87d03-92bf-405c-b608-5f4538613c5f" />
+` |
+| Data verified via SSH (MySQL shell) | `screenshots/mysql-<img width="1366" height="768" alt="verify" src="https://github.com/user-attachments/assets/50dd8ccb-39cb-4abc-b265-20422a084013" />
+` |
+| EC2 instance running | `screenshots/ec2-<img width="1366" height="768" alt="instance" src="https://github.com/user-attachments/assets/634782ad-7cc6-46fa-8697-1b2e906e437c" />
+` |
+| RDS database available | `screenshots/rds-<img width="1366" height="768" alt="database" src="https://github.com/user-attachments/assets/876be84f-1085-4e18-bd37-2ab208970bc4" />
+` |
 
 ## Tech stack
 AWS EC2 · AWS RDS (MySQL) · Nginx · PHP-FPM · HTML/CSS
