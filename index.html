@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<style>
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:Arial, Helvetica, sans-serif;
+}
+body{
+ background:linear-gradient(135deg,#4f46e5,#06b6d4);
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ min-height:100vh;
+ padding:30px;
+}
+.container{
+ width:100%;
+ max-width:1000px;
+ background:#fff;
+ display:flex;
+ border-radius:15px;
+ overflow:hidden;
+ box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+.left{
+ width:40%;
+ background:linear-gradient(135deg,#2563eb,#06b6d4);
+ color:#fff;
+ padding:50px 35px;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+}
+.left h1{
+ font-size:38px;
+ margin-bottom:20px;
+}
+.left p{
+ line-height:1.8;
+ font-size:17px;
+}
+.right{
+ width:60%;
+ padding:40px;
+}
+.right h2{
+ text-align:center;
+ margin-bottom:25px;
+ color:#333;
+}
+.row{
+ display:flex;
+ gap:15px;
+}
+.input-box{
+ width:100%;
+ margin-bottom:18px;
+}
+.input-box label{
+ display:block;
+ margin-bottom:8px;
+ font-weight:bold;
+ color:#444;
+}
+.input-box input,
+.input-box select,
+.input-box textarea{
+ width:100%;
+ padding:12px;
+ border:1px solid #ccc;
+ border-radius:8px;
+ font-size:15px;
+}
+.input-box input:focus,
+.input-box select:focus,
+.input-box textarea:focus{
+ border:1px solid #2563eb;
+ outline:none;
+ box-shadow:0 0 5px rgba(37,99,235,.4);
+}
+textarea{
+ resize:none;
+}
+button{
+ width:100%;
+ padding:14px;
+ background:#2563eb;
+ color:white;
+ border:none;
+ border-radius:8px;
+ font-size:17px;
+ cursor:pointer;
+ transition:.3s;
+}
+button:hover{
+ background:#1d4ed8;
+}
+.footer{
+ text-align:center;
+ margin-top:20px;
+ color:#777;
+ font-size:14px;
+}
+@media(max-width:900px){
+.container{
+ flex-direction:column;
+}
+.left,.right{
+ width:100%;
+}
+.row{
+ flex-direction:column;
+ gap:0;
+}
+.left{
+ text-align:center;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="left">
+<h1>Student Portal</h1>
+<p>
+Welcome to the Student Registration System.
+Fill in your details below to register.
+Your information will be securely stored in the database.
+</p>
+</div>
+<div class="right">
+<h2>Registration Form</h2>
+<form action="insert.php" method="POST">
+<div class="row">
+<div class="input-box">
+<label>First Name</label>
+<input type="text" name="firstname" placeholder="Enter First Name" required>
+</div>
+<div class="input-box">
+<label>Last Name</label>
+<input type="text" name="lastname" placeholder="Enter Last Name" required>
+</div>
+</div>
+<div class="input-box">
+<label>Email</label>
+<input type="email" name="email" placeholder="Enter Email Address" required>
+</div>
+<div class="input-box">
+<label>Mobile Number</label>
+<input type="tel" name="mobile" placeholder="Enter Mobile Number" required>
+</div>
+<div class="row">
+<div class="input-box">
+<label>Gender</label>
+<select name="gender">
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+</div>
+<div class="input-box">
+<label>Date of Birth</label>
+<input type="date" name="dob">
+</div>
+</div>
+<div class="input-box">
+<label>Course</label>
+<select name="course">
+<option>AWS Cloud</option>
+<option>DevOps</option>
+<option>Python</option>
+<option>Java</option>
+<option>AI & ML</option>
+</select>
+</div>
+<div class="input-box">
+<label>Address</label>
+<textarea name="address" rows="3" placeholder="Enter Address"></textarea>
+</div>
+<div class="row">
+<div class="input-box">
+<label>Password</label>
+<input type="password" name="password" placeholder="Password">
+</div>
+<div class="input-box">
+<label>Confirm Password</label>
+<input type="password" name="confirm_password" placeholder="Confirm Password">
+</div>
+</div>
+<button type="submit">Register Now</button>
+</form>
+<div class="footer">
+&copy; 2026 Student Registration System
+</div>
+</div>
+</div>
+</body>
+</html>

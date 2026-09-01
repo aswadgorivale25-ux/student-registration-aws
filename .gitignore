@@ -1,0 +1,8 @@
+# Real DB credentials - never commit this
+config.php
+
+# Common junk
+.DS_Store
+*.log
+*.pem
+*.key
