@@ -136,7 +136,7 @@ SELECT * FROM students;
 ` |
 # 👨‍💻 Author
 
-**Aswad Gorivae**
+**Aswad Gorivale**
 
 AWS Cloud / DevOps Project
 
