@@ -134,6 +134,11 @@ SELECT * FROM students;
 ` |
 | RDS database available | `screenshots/rds-<img width="1366" height="768" alt="database" src="https://github.com/user-attachments/assets/876be84f-1085-4e18-bd37-2ab208970bc4" />
 ` |
+# 👨‍💻 Author
+
+**Aswad Gorivae**
+
+AWS Cloud / DevOps Project
 
 ## Tech stack
 AWS EC2 · AWS RDS (MySQL) · Nginx · PHP-FPM · HTML/CSS
